@@ -1,0 +1,268 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+*,*:before,*:after{
+	box-sizing: border-box;
+}
+.wrap{
+	width: 1024px;
+	margin: auto;
+}
+.topheader{
+	display: flex;
+	flex-direction: row-reverse;
+	background: #F6F6F8;
+}
+.topmenu{
+	display: flex;
+}
+.fb{
+	background: url(../img/facebook_icon.png) no-repeat 8px;
+}
+.twi{
+	background: url(../img/twitter_icon.png) no-repeat 8px;
+}
+.fb a, .twi a{
+	display: block;
+	padding: 8px 10px 8px 18px;
+	margin-left: 10px;
+	text-decoration: none;
+}
+.fb a{
+	color: #4267B2;
+}
+.twi a{
+	color: #1DA1F2;
+}
+.fb a:hover, .twi a:hover{
+	opacity: 0.5;
+}
+.header{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.header h1 a{
+	display: block;
+	width: 151px;
+	height: 36px;
+	background: url(../img/hexschool-logo.png) no-repeat;
+	text-indent: 101%;
+	overflow: hidden;
+	white-space: nowrap;
+	margin: 8px 0 10px 20px;
+}
+.menu{
+	height: 68px;
+	display: flex;
+}
+.menu li{
+	padding-right: 35px;
+	text-align: center;
+}
+.menu a{
+	display: block;
+	padding: 24px 0;
+	text-decoration: none;
+	color: #00251A;
+	font-size: 18px;
+}
+.menu a:hover{
+	color: #00CC99;
+	border-bottom: 2px solid #00CC99;
+}
+.banner{
+	position: relative;
+	height: 390px;
+	background: url(../img/header_background.png);
+	background-position: center center;
+	background-size: cover;
+	margin-bottom: 60px;
+}
+.banner p{
+	position: absolute;
+	top: 35%;
+	font-size: 32px;
+	line-height: 43.2px;
+	margin-left: 80px;
+}
+.covertext{
+	position: absolute;
+	top: 30%;
+	width: 1024px;
+	height: 139px;
+	background-color: #ffff;
+	opacity: 0.2;
+}
+.course{
+	display: flex;
+	justify-content: space-around;
+	margin-bottom: 60px;
+}
+.html-course, .rwd-course, .jquery-course{
+	display: flex;
+	flex-direction: column;
+    align-items: center;
+	width: 320px;
+	padding: 20px;
+	border-radius: 20px;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+}
+.html-course:hover, .rwd-course:hover, .jquery-course:hover{
+	box-shadow: 0 2px 4px #00CC99;
+}
+.jquery-course{
+	padding: 65px 20px 0;
+}
+.html-course h2, .rwd-course h2, .jquery-course h2{
+	font-size: 20px;
+	font-weight: bold;
+	padding: 12px 0;
+}
+.rwd-course h2{
+	padding: 9px 0;
+}
+.jquery-course h2{
+	padding: 45px 0 12px;
+}
+.html-course p, .rwd-course p, .jquery-course ul{
+	line-height: 24px;
+}
+.list{
+	width: 800px;
+	margin: auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.list h2{
+	font-size: 24px;
+	font-weight: bold;
+	margin-bottom: 24px;
+}
+table tr{
+	border-bottom: 1px solid rgb(195, 195, 195);
+	text-align: left;
+}
+.line-one{
+	border-top: 1px solid rgb(195, 195, 195);
+}
+table tr th, table tr td{
+	padding: 16px 80px 16px 17px;
+}
+table tr th{
+	font-weight: bold;
+}
+.mark{
+	color: #00CC99;
+	font-weight: bold;
+}
+.form{
+	margin-top: 60px;
+	background: linear-gradient(#E4FFF8, #A2DDCE);
+}
+.form h2{
+	font-weight: bold;
+	font-size: 24px;
+	line-height: 28.8px;
+	text-align: center;
+	padding: 36px 0 55px;
+}
+h3{
+	margin-bottom: 8px;
+}
+input{
+	width: 250px;
+	padding: 7px 10px;
+	border: 1px solid rgb(195, 195, 195);
+	border-radius: 4px;
+	margin-bottom: 16px;
+}
+.formleft{
+	float: left;
+	left: 100px;
+	margin: 0 100px 0 140px;
+}
+.formright{
+	float: left;
+}
+textarea{
+	width: 400px;
+	height: 175px;
+	border: 1px solid rgb(195, 195, 195);
+	border-radius: 4px;
+}
+.clearbox{
+	clear: both;
+}
+.bottom{
+	margin: 16px 42% 36px;
+	width: 159px;
+	border: #00251A;
+	background: #00251A;
+	color: #ffff;
+}
+.bottom:hover{
+	background: #00CC99;
+}
+.footer img{
+	float: left;
+	margin: 22px 45px;
+}
+.footerright{
+	float: right;
+	margin: 20px 45px;
+}
+.footerright p{
+	line-height: 24px;
+}
+.footerright p a{
+	text-decoration: none;
+	color: #00CC99;
+}
